@@ -1,0 +1,77 @@
+.projectCard {
+  width: 17.688rem;
+  height: 26.25rem;
+  border: 1px solid var(--color-outline);
+  border-radius: 1rem;
+  color: #fff9;
+  mix-blend-mode: plus-lighter;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+/* .play {
+  animation: slideDown 0.1s linear 1;
+  animation-play-state: paused;
+} */
+.projectCard:hover .play {
+  animation-play-state: running;
+}
+
+.project-card-title {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.117px;
+  mix-blend-mode: plus-lighter;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0 1rem 1rem;
+}
+
+.reel-div-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.reel-div {
+  background: #1a1f25;
+  opacity: 0.6;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #536277;
+}
+
+.reel-div img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
+/* .slideUp {
+  animation: slideUp 0.1s linear 1;
+} */

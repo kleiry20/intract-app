@@ -1,0 +1,28 @@
+.creators {
+  border-top: 1px solid var(--color-outline);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.creators-h3 {
+  color: var(--color-white-500);
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.creators-p {
+  color: var(--color-gray-400);
+  margin: 0.4rem 0 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.creators-card-wrapper {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+}
