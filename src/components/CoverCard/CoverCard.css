@@ -1,0 +1,15 @@
+.accordion {
+  width: 520px;
+}
+
+.accordion-header {
+  /* background-color: var(--color-black-300); */
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button {
+  background-color: var(--color-black-300) !important;
+}
