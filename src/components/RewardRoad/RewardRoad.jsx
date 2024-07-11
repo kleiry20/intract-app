@@ -9,7 +9,6 @@ const RewardRoad = () => {
       <div>
         part1
         <CoverCard />
-        
       </div>
       <br />
       <div>part2</div>
