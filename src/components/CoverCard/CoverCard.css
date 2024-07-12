@@ -1,5 +1,6 @@
 .cover-card {
   width: 520px;
+  /* position: relative; */
 }
 
 .cover-card-header {
@@ -101,11 +102,11 @@
 
 .cover-card-item {
   display: flex;
+  justify-content: space-between;
   background-color: #181616;
   border-radius: 12px;
   border: 1px solid #201f21;
   padding: 8px;
-  display: flex;
   align-items: center;
   gap: 16px;
   cursor: pointer;
@@ -128,3 +129,61 @@
   height: 100%;
   border-radius: 12px;
 }
+
+.cover-card-mid {
+  display: flex;
+  flex-direction: column;
+  width: 56%;
+  gap: 0.5rem;
+}
+
+.cover-card-title {
+  margin: 0 0 8px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cover-card-hr {
+  margin: 0;
+  
+}
+
+.progress-tracker {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.progress-wrapper {
+  height: 18px;
+  display: flex;
+  background: #2f2f2f;
+  border-radius: 100px;
+  flex: 1;
+  box-shadow: 0 -0.5px 0.5px #fff3 inset, 0 0.5px 0.5px #fff3 inset;
+}
+
+/* .progress-wrapper:hover {
+  filter: brightness(90%);
+} */
+
+.progress {
+  display: flex;
+  border: 1px solid black;
+  box-shadow: 0 -2px 2px #0006 inset, 0 2px 2px #0006 inset;
+  align-items: center;
+  flex: 1;
+  margin: 0.2rem;
+  border-radius: 100px;
+}
+
+.checkbox {
+  align-self: end;
+  border-radius: 50%;
+  border: 1px solid #4f4f4f;
+  display: flex;
+  padding: 0.3rem;
+  background: #282828;
+}
+

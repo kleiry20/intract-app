@@ -1,48 +1,60 @@
 import React from "react";
 import "./CoverCard.css";
 import CoinImg from "../../assets/coin.svg";
+import { FaCheck } from "react-icons/fa6";
 
-const CoverCard = () => {
+const CoverCard = ({ courseDetails, courseTopics }) => {
+  console.log(courseDetails, "course1");
   return (
     <div className="cover-card">
       <details>
         <summary className="cover-card-header">
           <div className="cover-card-img-wrapper">
             <img
-              src="https://static.highongrowth.xyz/enterprise/65017d014e5f24613adbfd67/2d1ac16ea7c9416d94a74f2ba2fe8d4a.png"
+              src={courseDetails.courseImg}
               className="cover-card-img"
-              alt=""
+              alt="cover card img"
               width={12}
               height={12}
             />
           </div>
           <div className="cover-card-details">
-            <h3 className="cover-card-h3">Basics of Crypto</h3>
-            <p className="cover-card-p">
-              The safest and easiest place to start your crypto journey!
-            </p>
+            <h3 className="cover-card-h3">{courseDetails.courseTitle}</h3>
+            <p className="cover-card-p">{courseDetails.courseDesc}</p>
             <hr className="cover-card-hr" />
             <div className="cover-card-coins">
               <img src={CoinImg} alt="coin" width={18} height={16} />
-              <p className="cover-card-xp">1490 XPs</p>
+              <p className="cover-card-xp">{courseDetails.courseXP}</p>
             </div>
           </div>
         </summary>
         <div className="cover-card-body">
-          <div className="cover-card-item">
-            <div className="cover-card-item-img-wrapper">
-              <img
-                className="cover-card-item-img"
-                src="https://static.highongrowth.xyz/enterprise/65017d014e5f24613adbfd67/4eeb6ff08f6640b8bd2edf23864d21c0.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <p>#1: But what is crypto and</p>
-            </div>
+          {courseTopics &&
+            courseTopics.map((task) => (
+              <div className="cover-card-item">
+                <div className="cover-card-item-img-wrapper">
+                  <img
+                    className="cover-card-item-img"
+                    src={task.taskImg}
+                    alt=""
+                  />
+                </div>
+                <div className="cover-card-mid">
+                  <p className="cover-card-title">{task.title}</p>
+                  <hr className="cover-card-hr" />
+                  <div className="progress-tracker">
+                    <label>{task.tasks}</label>
+                    <div className="progress-wrapper">
+                      <div className="progress"></div>
+                    </div>
+                  </div>
+                </div>
 
-            <div>o</div>
-          </div>
+                <div className="checkbox">
+                  <FaCheck style={{ fontSize: "12px", color: "#4F4F4F" }} />
+                </div>
+              </div>
+            ))}
         </div>
       </details>
     </div>

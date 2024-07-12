@@ -6,3 +6,20 @@
   /* position: relative; */
   color: white;
 }
+
+.road1 {
+  /* z-index: 2; */
+  position: relative;
+  left: -122px;
+  top: 130px;
+}
+
+.road2 {
+  position: relative;
+  left: 240px;
+  top: -40px;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
