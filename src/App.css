@@ -5,7 +5,6 @@
   --color-bg: #080808;
   --color-outline: #2d2d2d;
 
-  /* --color-text: #d5d5d5; */
   --color-purple-500: #6434e9;
   --color-orange-500: #fa8923;
 
@@ -21,8 +20,6 @@
   --color-black-300: #191616;
   --color-black-700: #060606;
   --color-black-800: #080808;
-
-  /* --font-jost: ; */
 }
 
 body {

@@ -4,7 +4,6 @@ import CoinImg from "../../assets/coin.svg";
 import { FaCheck } from "react-icons/fa6";
 
 const CoverCard = ({ courseDetails, courseTopics }) => {
-  console.log(courseDetails, "course1");
   return (
     <div className="cover-card">
       <details open>

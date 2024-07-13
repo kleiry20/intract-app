@@ -18,12 +18,6 @@ const NFTCard = ({ imgUrl }) => {
         <div className="nft-img-lock">
           <PiLockFill style={{ color: "#A1A1A1", fontSize: "20px" }} />
         </div>
-        {/* <div>
-          <h3 className="nft-title">Intract Certified: Learner NFT</h3>
-          <p className="nft-desc">Your crypto black-belt certificate</p>
-          <button className="nft-btn">Claim</button>
-        </div> */}
-
         <h3 className="nft-title">Intract Certified: Learner NFT</h3>
         <p className="nft-desc">Your crypto black-belt certificate</p>
         <button className="nft-btn">Claim</button>

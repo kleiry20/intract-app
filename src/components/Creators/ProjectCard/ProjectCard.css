@@ -22,10 +22,6 @@
   transition: all 0.1s linear;
 }
 
-/* .play {
-  animation: slideDown 0.1s linear 1;
-  animation-play-state: paused;
-} */
 .projectCard:hover .play {
   animation-play-state: running;
 }
@@ -72,6 +68,3 @@
     transform: translateY(30px);
   }
 }
-/* .slideUp {
-  animation: slideUp 0.1s linear 1;
-} */
