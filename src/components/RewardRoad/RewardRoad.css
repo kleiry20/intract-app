@@ -3,23 +3,67 @@
   padding: 0 1rem;
   width: 100%;
   max-width: 1200px;
-  /* position: relative; */
   color: white;
+  height: 137rem;
+  margin-top: -98px;
 }
 
 .road1 {
-  /* z-index: 2; */
-  position: relative;
-  left: -122px;
-  top: 130px;
+  position: absolute;
+  top: 696px;
+  left: 18px;
 }
 
 .road2 {
-  position: relative;
-  left: 240px;
-  top: -40px;
+  position: absolute;
+  left: 359px;
+  top: 777px;
 }
 
 svg:not(:root) {
   overflow: hidden;
+}
+
+.road3 {
+  position: absolute;
+  left: 808px;
+  top: 968px;
+}
+
+.course2 {
+  position: absolute;
+  top: 1273px;
+  left: 553px;
+}
+
+.road4 {
+  position: absolute;
+  top: 1300px;
+  left: 271px;
+}
+
+.nft1 {
+  position: absolute;
+  top: -7px;
+  right: -9px;
+  width: 30rem;
+}
+
+.nft2 {
+  width: 30rem;
+  position: absolute;
+  top: 771px;
+  right: 903px;
+}
+
+.road5 {
+  position: absolute;
+  top: 1705px;
+  left: -132px;
+}
+
+.rewards-div {
+  left: 563px;
+  position: absolute;
+  top: 2027px;
 }

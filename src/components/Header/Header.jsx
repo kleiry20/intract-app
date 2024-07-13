@@ -11,7 +11,10 @@ const Header = () => {
       <ul className="links">
         <a href="">Compass</a>
         <a href="">Explore</a>
-        <a href="">Academy</a>
+        <a href="" className="academy-link-div active">
+          Academy
+         <span className="academy-new">New</span>
+        </a>
         <a href="">NFTs</a>
         <a href="">For Projects</a>
       </ul>

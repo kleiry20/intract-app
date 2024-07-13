@@ -1,5 +1,8 @@
 .header {
-  background-color: #060606;
+  z-index: 999;
+  /* background-color: #060606; */
+  background: transparent;
+
   padding: 0.2rem 0;
   display: flex;
   justify-content: center;
@@ -7,7 +10,11 @@
   gap: 4rem;
   border-bottom: 1px solid var(--color-outline);
   position: sticky;
-  top: 0px;
+  top: 0;
+  /* glassmorph */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .intract {
@@ -29,8 +36,29 @@
   font-size: 0.895rem;
 }
 
-.links a:active {
-  background-color: red;
+.academy-link-div {
+  display: inline;
+  color: white;
+  position: relative;
+}
+
+.academy-link-div.active::before {
+  position: absolute;
+  content: "";
+  border-bottom: 4px solid white;
+  border-radius: 4rem;
+  width: 136px;
+  bottom: -20px;
+  left: -15px;
+}
+
+.academy-new {
+  color: white;
+  font-size: 12px;
+  background: #6434e9;
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.4rem;
+  margin-left: 8px;
 }
 
 .header-options {
@@ -42,7 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #181818;
+  background-color: #181818ba;
   color: var(--color-gray-200);
   padding: 0.8rem;
   width: 24rem;

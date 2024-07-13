@@ -16,7 +16,7 @@ export const Course2 = {
 
 export const course1Topics = [
   {
-    title: "#1: But what is crypto and xyz h",
+    title: "#1: But what is crypto and  web3?",
     tasks: "11 Tasks",
     taskImg:
       "https://static.highongrowth.xyz/enterprise/65017d014e5f24613adbfd67/4eeb6ff08f6640b8bd2edf23864d21c0.png",

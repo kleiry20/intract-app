@@ -10,7 +10,7 @@ const ProjectCard = ({ bg, title }) => {
           <img src={ReelSvg} alt="" />
         </div>
       </div>
-      <div className="play">play</div>
+      {/* <div className="play">play</div> */}
       <h3 className="project-card-title">{title}</h3>
     </div>
   );

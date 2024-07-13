@@ -7,7 +7,7 @@ const CoverCard = ({ courseDetails, courseTopics }) => {
   console.log(courseDetails, "course1");
   return (
     <div className="cover-card">
-      <details>
+      <details open>
         <summary className="cover-card-header">
           <div className="cover-card-img-wrapper">
             <img
@@ -43,7 +43,7 @@ const CoverCard = ({ courseDetails, courseTopics }) => {
                   <p className="cover-card-title">{task.title}</p>
                   <hr className="cover-card-hr" />
                   <div className="progress-tracker">
-                    <label>{task.tasks}</label>
+                    <label style={{ color: "#A2A2A2" }}>{task.tasks}</label>
                     <div className="progress-wrapper">
                       <div className="progress"></div>
                     </div>
