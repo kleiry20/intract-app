@@ -41,7 +41,7 @@
   position: relative;
 }
 
-.active {
+.active-btn {
   background: #393939f5;
   mix-blend-mode: plus-lighter;
   box-shadow: 0 1px 1px #ffffff26 inset;

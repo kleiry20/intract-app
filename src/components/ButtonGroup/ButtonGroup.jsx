@@ -5,7 +5,7 @@ const ButtonGroup = () => {
     <div className="button-group">
       <div className="button-group-wrapper">
         <input type="radio" id="button1" name="button-group" />
-        <label htmlFor="button1" className="button active">
+        <label htmlFor="button1" className="button active-btn">
           Essentials
         </label>
 
